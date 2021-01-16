@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :dev-http {8080 "public"}
+ :builds   {:frontend     {:target  :browser
+                           :modules {:main {:init-fn hello.app/init}}}
+
+            :browser-test {:target   :browser-test
+                           :test-dir "out/browser-test"
+                           :devtools {:http-port 8021
+                                      :http-root "out/browser-test"}}}}
