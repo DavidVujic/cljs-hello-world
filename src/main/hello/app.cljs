@@ -4,10 +4,24 @@
 (defn hello-world []
   "Hello World.")
 
-(defn message []
-  [:div
+(defn theme-toggle-field []
+  [:input.theme-switch {:type "checkbox"
+                        :id   "theme-switch"}])
+
+(defn theme-toggle []
+  [:label.switch-label {:for "theme-switch"}])
+
+(defn greeting []
+  [:<>
    [:h1 "Good Morning"]
    [:p "This is Hiccup."]])
 
+(defn page []
+  [:<>
+   [theme-toggle-field]
+   [:div#page
+    [theme-toggle]
+    [greeting]]])
+
 (defn ^:export run []
-  (rdom/render [message] (js/document.getElementById "root")))
+  (rdom/render [page] (js/document.getElementById "root")))
