@@ -8,7 +8,7 @@
   [:input.theme-switch {:type "checkbox"
                         :id   "theme-switch"}])
 
-(defn theme-toggle []
+(defn theme-toggle-label []
   [:label.switch-label {:for "theme-switch"}])
 
 (defn greeting []
@@ -17,11 +17,14 @@
    [:p "This is Hiccup."]])
 
 (defn page []
+  [:div#page
+   [theme-toggle-label]
+   [greeting]])
+
+(defn main []
   [:<>
    [theme-toggle-field]
-   [:div#page
-    [theme-toggle]
-    [greeting]]])
+   [page]])
 
 (defn ^:export run []
-  (rdom/render [page] (js/document.getElementById "root")))
+  (rdom/render [main] (js/document.getElementById "app")))
