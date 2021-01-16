@@ -1,19 +1,23 @@
 (ns hello.app
-  (:require [reagent.dom :as rdom]))
+  (:require [reagent.dom :as rdom]
+            [re-frame.core :as rf]
+            [hello.subs :refer [<sub]]
+            [hello.events :refer [>evt]]))
 
 (defn hello-world []
   "Hello World.")
 
 (defn theme-toggle-field []
   [:input.theme-switch {:type "checkbox"
-                        :id   "theme-switch"}])
+                        :id   "theme-switch"
+                        :on-change (fn [e] (>evt [:toggle-theme e.target.checked]))}])
 
 (defn theme-toggle-label []
   [:label.switch-label {:for "theme-switch"}])
 
 (defn greeting []
   [:<>
-   [:h1 "Good Morning"]
+   [:h1 (if (<sub [:dark-theme?]) "Good Evening" "Good Morning")]
    [:p "This is Hiccup."]])
 
 (defn page []
@@ -27,4 +31,5 @@
    [page]])
 
 (defn ^:export run []
+  (>evt [:init])
   (rdom/render [main] (js/document.getElementById "app")))

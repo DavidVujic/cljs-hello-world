@@ -5,7 +5,8 @@
   "src/test"]
 
  :dependencies
- [[reagent "1.0.0"]]
+ [[reagent "1.0.0"]
+  [re-frame "1.1.2"]]
 
  :dev-http {8080 "public"}
  :builds   {:frontend {:target  :browser
