@@ -17,8 +17,12 @@
 
 (defn greeting []
   [:<>
-   [:h1 (if (<sub [:dark-theme?]) "Good Evening" "Good Morning")]
-   [:p "This is Hiccup."]])
+   [:h1 (if (<sub [:dark-theme?])
+          "Good Evening."
+          "Good Morning.")]
+   [:p "Made with cool things like Hiccup, Reagent and re-frame"]
+   (when (<sub [:light-theme?])
+     [:p "(go get a cup of coffee)"])])
 
 (defn page []
   [:div#page

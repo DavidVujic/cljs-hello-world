@@ -8,3 +8,10 @@
  :dark-theme?
  (fn [db _]
    (get-in db [:theme :toggle :checked?])))
+
+
+(rf/reg-sub
+ :light-theme?
+ :<- [:dark-theme?]
+ (fn [dark-theme? _]
+   (not dark-theme?)))

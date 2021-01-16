@@ -56,5 +56,5 @@
   background: var(--bg-color);
   color: var(--text-color);
   min-height: 100%;
-  transition: color .2s, background-color .2s;
+  transition: color .5s, background-color .5s;
 }
