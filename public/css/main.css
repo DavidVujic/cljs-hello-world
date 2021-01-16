@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 main {
@@ -10,5 +10,6 @@ main {
 }
 
 #root {
-  padding-top: 20%;
+  padding-top: 5%;
+  text-align: center;
 }

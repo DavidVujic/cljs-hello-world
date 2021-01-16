@@ -5,11 +5,11 @@
   "src/test"]
 
  :dependencies
- []
+ [[reagent "1.0.0"]]
 
  :dev-http {8080 "public"}
- :builds   {:frontend     {:target  :browser
-                           :modules {:main {:init-fn hello.app/init}}}
+ :builds   {:frontend {:target  :browser
+                       :modules {:main {:entries [hello.app]}}}
 
             :browser-test {:target   :browser-test
                            :test-dir "out/browser-test"
