@@ -1,5 +1,6 @@
 node_modules/
-public/js
+public/js/cljs-runtime
+public/js/manifest.edn
 out/browser-test/js
 
 /target
