@@ -2,7 +2,8 @@
   (:require [reagent.dom :as rdom]
             [re-frame.core :as rf]
             [hello.subs :refer [<sub]]
-            [hello.events :refer [>evt]]))
+            [hello.events :refer [>evt]]
+            ["react-tooltip" :as ReactTooltip]))
 
 (defn hello-world []
   "Hello World.")
@@ -20,7 +21,8 @@
         dark?  (<sub [:dark-theme?])]
     [:<>
      [:h1 (if dark? "Good Evening." "Good Morning.")]
-     [:p "Made with cool tools like Hiccup, Reagent and re-frame"]
+     [:p {:data-tip "And this is ReactTooltip"}
+      "Made with cool tools like Hiccup, Reagent and re-frame"]
      (when light?
        [:p (str " 🌅 " " 😴 " " ☕ ")])]))
 
@@ -29,10 +31,16 @@
    [theme-toggle-label]
    [greeting]])
 
+(defn tooltip []
+  [:> ReactTooltip {:place  "top"
+                    :type   "success"
+                    :effect "float"}])
+
 (defn main []
   [:<>
    [theme-toggle-field]
-   [page]])
+   [page]
+   [tooltip]])
 
 (defn ^:export run []
   (rf/dispatch-sync [:init])
