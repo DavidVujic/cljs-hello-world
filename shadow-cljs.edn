@@ -1,18 +1,16 @@
 ;; shadow-cljs configuration
-{:source-paths
- ["src/dev"
-  "src/main"
-  "src/test"]
+{:source-paths ["src/main" "src/test"]
 
- :dependencies
- [[reagent "1.0.0"]
-  [re-frame "1.1.2"]]
+ :dependencies [[reagent "1.0.0"]
+                [re-frame "1.1.2"]]
 
  :dev-http {8080 "public"}
- :builds   {:frontend {:target  :browser
-                       :modules {:main {:entries [hello.app]}}}
+ :builds   {:app {:target     :browser
+                  :output-dir "public/js"
+                  :asset-path "/js"
+                  :modules    {:main {:entries [hello.app]}}}
 
-            :browser-test {:target   :browser-test
-                           :test-dir "out/browser-test"
-                           :devtools {:http-port 8021
-                                      :http-root "out/browser-test"}}}}
+            :tests {:target   :browser-test
+                    :test-dir "out/browser-test"
+                    :devtools {:http-port 8021
+                               :http-root "out/browser-test"}}}}

@@ -16,13 +16,13 @@
   [:label.switch-label {:for "theme-switch"}])
 
 (defn greeting []
-  [:<>
-   [:h1 (if (<sub [:dark-theme?])
-          "Good Evening."
-          "Good Morning.")]
-   [:p "Made with cool things like Hiccup, Reagent and re-frame"]
-   (when (<sub [:light-theme?])
-     [:p "(go get a cup of coffee)"])])
+  (let [light? (<sub [:light-theme?])
+        dark?  (<sub [:dark-theme?])]
+    [:<>
+     [:h1 (if dark? "Good Evening." "Good Morning.")]
+     [:p "Made with cool things like Hiccup, Reagent and re-frame"]
+     (when light?
+       [:p (str "🌅" "😴" "☕")])]))
 
 (defn page []
   [:div#page
@@ -35,5 +35,5 @@
    [page]])
 
 (defn ^:export run []
-  (>evt [:init])
+  (rf/dispatch-sync [:init])
   (rdom/render [main] (js/document.getElementById "app")))
