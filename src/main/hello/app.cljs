@@ -3,38 +3,38 @@
             [re-frame.core :as rf]
             [hello.subs :refer [<sub]]
             [hello.events :refer [>evt]]
-            ["react-tooltip" :as ReactTooltip]))
-
-(defn hello-world []
-  "Hello World.")
+            ["react-tooltip" :as ReactTooltip]
+            ["date-fns" :refer [format]]))
 
 (defn theme-toggle-field []
   [:input.theme-switch {:type "checkbox"
                         :id   "theme-switch"
                         :on-change (fn [e] (>evt [:toggle-theme e.target.checked]))}])
 
+(defn tooltip []
+  [:> ReactTooltip {:type "success"}])
+
 (defn theme-toggle-label []
   [:label.switch-label {:for "theme-switch"}])
+
+(defn today []
+  [:<>
+   [:p (str " 🌅 " " 😴 " " ☕ ")]
+   [:p (format (.now js/Date) "EEEE")]])
 
 (defn greeting []
   (let [light? (<sub [:light-theme?])
         dark?  (<sub [:dark-theme?])]
     [:<>
      [:h1 (if dark? "Good Evening." "Good Morning.")]
-     [:p {:data-tip "And this is ReactTooltip"}
-      "Made with cool tools like Hiccup, Reagent and re-frame"]
+     [:p {:data-tip "And this is ReactTooltip"} "Made with cool tools like Hiccup, Reagent and re-frame"]
      (when light?
-       [:p (str " 🌅 " " 😴 " " ☕ ")])]))
+       [today])]))
 
 (defn page []
   [:div#page
    [theme-toggle-label]
    [greeting]])
-
-(defn tooltip []
-  [:> ReactTooltip {:place  "top"
-                    :type   "success"
-                    :effect "float"}])
 
 (defn main []
   [:<>
