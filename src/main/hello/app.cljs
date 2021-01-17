@@ -20,9 +20,9 @@
         dark?  (<sub [:dark-theme?])]
     [:<>
      [:h1 (if dark? "Good Evening." "Good Morning.")]
-     [:p "Made with cool things like Hiccup, Reagent and re-frame"]
+     [:p "Made with cool tools like Hiccup, Reagent and re-frame"]
      (when light?
-       [:p (str "🌅" "😴" "☕")])]))
+       [:p (str " 🌅 " " 😴 " " ☕ ")])]))
 
 (defn page []
   [:div#page

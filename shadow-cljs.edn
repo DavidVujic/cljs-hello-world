@@ -12,5 +12,5 @@
 
             :tests {:target   :browser-test
                     :test-dir "out/browser-test"
-                    :devtools {:http-port 8021
+                    :devtools {:http-port 8081
                                :http-root "out/browser-test"}}}}
