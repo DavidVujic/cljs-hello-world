@@ -10,4 +10,4 @@ Have a look at this [Blog post](https://davidvujic.blogspot.com/2021/01/simple-w
 for an introduction to `Clojure`, `ClojureScript`, `Reagent` and `re-frame`.
 
 
-Slides in :sweden: used in the January 20 2021 [FreeCode MeetUp Series]()
+Slides in :sweden: used in the January 20 2021 [FreeCode MeetUp Series](https://freecode-meetup-series.confetti.events)
