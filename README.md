@@ -24,6 +24,10 @@ Starting the app:
 npx shadow-cljs watch app browser-test
 ```
 
+You can now browse:
+* the example web page at http://localhost:8080
+* the unit test page at http://localhost:8081
+
 ###### Emacs
 Or, if you are using Emacs, run the command `cider-jack-in-cljs` from the editor. 
 To make the app startup process even smoother, create a `.dir-locals.el` file in the root folder, add this to it:
