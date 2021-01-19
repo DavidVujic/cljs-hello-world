@@ -21,7 +21,7 @@ in :sweden: used in the 2021-01-20 [FreeCode MeetUp Series](https://freecode-mee
 Starting the app:
 
 ``` bash
-npx shadow-cljs watch app browser-test
+npx shadow-cljs watch app tests
 ```
 
 You can now browse:
