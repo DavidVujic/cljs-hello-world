@@ -9,7 +9,6 @@
  (fn [db _]
    (true? (get-in db [:theme :toggle :checked?]))))
 
-
 (rf/reg-sub
  :light-theme?
  :<- [:dark-theme?]
