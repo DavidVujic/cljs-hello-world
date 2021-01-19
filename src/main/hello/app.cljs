@@ -20,7 +20,7 @@
 (defn today []
   [:<>
    [:p (str " 🌅 " " 😴 " " ☕ ")]
-   [:p (format (.now js/Date) "EEEE")]])
+   [:p (-> js/Date .now (format "EEEE"))]])
 
 (defn greeting []
   (let [light? (<sub [:light-theme?])
