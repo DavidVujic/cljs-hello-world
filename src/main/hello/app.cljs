@@ -7,8 +7,8 @@
             ["date-fns" :refer [format]]))
 
 (defn theme-toggle-field []
-  [:input.theme-switch {:type "checkbox"
-                        :id   "theme-switch"
+  [:input.theme-switch {:type      "checkbox"
+                        :id        "theme-switch"
                         :on-change (fn [e] (>evt [:toggle-theme (-> e .-target .-checked)]))}])
 
 (defn tooltip []
