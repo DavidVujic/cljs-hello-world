@@ -37,3 +37,6 @@ To make the app startup process even smoother, create a `.dir-locals.el` file in
          (cider-shadow-default-options . ":app")
          (cider-shadow-watched-builds . (":app" ":tests")))))
 ```
+
+##### The CSS
+The theme switching `css` comes from this [blog post](https://alexandersandberg.com/theme-switcher/).
