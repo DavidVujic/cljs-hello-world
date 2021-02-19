@@ -7,7 +7,7 @@
 (rf/reg-sub
  :dark-theme?
  (fn [db _]
-   (true? (get-in db [:theme :toggle :checked?]))))
+   (= "dark" (get-in db [:theme :active]))))
 
 (rf/reg-sub
  :light-theme?

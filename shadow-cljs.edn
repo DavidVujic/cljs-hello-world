@@ -9,8 +9,8 @@
                   :output-dir "public/js"
                   :asset-path "/js"
                   :modules    {:main {:entries [hello.app]}}
-                  :release    {:compiler-options {:optimizations :advanced}}
-                  }
+                  :devtools   {:after-load hello.app/main}
+                  :release    {:compiler-options {:optimizations :advanced}}}
 
             :tests {:target   :browser-test
                     :test-dir "out/browser-test"

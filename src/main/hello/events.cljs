@@ -5,16 +5,16 @@
 (def >evt rf/dispatch)
 
 (rf/reg-event-db
- :toggle
- (fn [db [_ checked?]]
-   (assoc-in db [:theme :toggle :checked?] checked?)))
+ :theme
+ (fn [db [_ theme]]
+   (assoc-in db [:theme :active] theme)))
 
 (rf/reg-event-fx
  :init
  (fn [_ _]
-   {:dispatch [:toggle true]}))
+   {:dispatch [:theme "dark"]}))
 
 (rf/reg-event-fx
  :toggle-theme
  (fn [_ [_ checked?]]
-   {:dispatch [:toggle (not checked?)]}))
+   {:dispatch [:theme (if checked? "dark" "light")]}))
