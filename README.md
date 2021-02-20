@@ -21,7 +21,7 @@ in :sweden: used in the 2021-01-20 [FreeCode MeetUp Series](https://freecode-mee
 Starting the app:
 
 ``` bash
-npx shadow-cljs watch app browser-test
+npx shadow-cljs watch app tests
 ```
 
 You can now browse:
@@ -37,3 +37,6 @@ To make the app startup process even smoother, create a `.dir-locals.el` file in
          (cider-shadow-default-options . ":app")
          (cider-shadow-watched-builds . (":app" ":tests")))))
 ```
+
+##### The CSS
+The theme switching `css` comes from this [blog post](https://alexandersandberg.com/theme-switcher/).
