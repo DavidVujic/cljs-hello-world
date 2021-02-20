@@ -14,5 +14,8 @@
    [:div#page
     [theme-toggle-label]]])
 
+(defn main-element []
+  (-> js/document (.getElementById "app")))
+
 (defn ^:export main []
-  (rdom/render [page] (-> js/document (.getElementById "app"))))
+  (rdom/render [page] (main-element)))
