@@ -9,6 +9,7 @@
                   :output-dir "public/js"
                   :asset-path "/js"
                   :modules    {:main {:entries [hello.app]}}
+                  :devtools   {:after-load hello.app/run}
                   :release    {:compiler-options {:optimizations :advanced}}
                   }
 
