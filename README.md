@@ -1,4 +1,4 @@
-### ClojureScript: simple within parenthesis
+### ClojureScript: React with a Hiccup
 
 Example code using:
 * ClojureScript
@@ -14,8 +14,8 @@ Here is a clickable example [web page](https://davidvujic.github.io/cljs-hello-w
 Have a look at this [Blog post](https://davidvujic.blogspot.com/2021/01/simple-within-parentheses.html) 
 for an introduction to `Clojure`, `ClojureScript`, `Reagent` and `re-frame`.
 
-[Slides](https://docs.google.com/presentation/d/1UoB09b2sT3RrZ8L6-ZN9sRGQ8WTnzvI32-M7IXJsEtE/edit?usp=sharing) 
-in :sweden: used in the 2021-01-20 [FreeCode MeetUp Series](https://freecode-meetup-series.confetti.events)
+[Slides](https://docs.google.com/presentation/d/1N91pDGYlXjGx6hXoG0NAlSUz-sWnN15YLKqWXwSWidE/edit?usp=sharing)
+used in the 2021-02-24 [FuncProg Sweden Second MeetUp 2021](https://www.meetup.com/Func-Prog-Sweden/events/275884481/)
 
 ##### Development
 Starting the app:
