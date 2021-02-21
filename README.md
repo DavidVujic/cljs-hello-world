@@ -17,6 +17,8 @@ for an introduction to `Clojure`, `ClojureScript`, `Reagent` and `re-frame`.
 [Slides](https://docs.google.com/presentation/d/1UoB09b2sT3RrZ8L6-ZN9sRGQ8WTnzvI32-M7IXJsEtE/edit?usp=sharing) 
 in :sweden: used in the 2021-01-20 [FreeCode MeetUp Series](https://freecode-meetup-series.confetti.events)
 
+Check out the presentation in :sweden: [on Youtube](https://youtu.be/o-NhnF-t-JE)
+
 ##### Development
 Starting the app:
 
