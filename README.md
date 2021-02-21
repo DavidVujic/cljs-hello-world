@@ -16,10 +16,9 @@ for an introduction to `Clojure`, `ClojureScript`, `Reagent` and `re-frame`.
 
 [Slides](https://docs.google.com/presentation/d/1UoB09b2sT3RrZ8L6-ZN9sRGQ8WTnzvI32-M7IXJsEtE/edit?usp=sharing) 
 in :sweden: used in the 2021-01-20 [FreeCode MeetUp Series](https://freecode-meetup-series.confetti.events)
+and the presentation in :sweden: [on Youtube](https://youtu.be/o-NhnF-t-JE)
 
-Check out the presentation in :sweden: [on Youtube](https://youtu.be/o-NhnF-t-JE)
-
-Looking for code and examples from FuncProg Second MeetUp 2010?
+Looking for code and examples from __FuncProg Second MeetUp 2021__?
 [It's in this feature branch](https://github.com/DavidVujic/cljs-hello-world/tree/func-prog-2021-second-meetup)
 
 ##### Development
