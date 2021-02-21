@@ -19,6 +19,9 @@ in :sweden: used in the 2021-01-20 [FreeCode MeetUp Series](https://freecode-mee
 
 Check out the presentation in :sweden: [on Youtube](https://youtu.be/o-NhnF-t-JE)
 
+Looking for code and examples from FuncProg Second MeetUp 2010?
+[It's in this feature branch](https://github.com/DavidVujic/cljs-hello-world/tree/func-prog-2021-second-meetup)
+
 ##### Development
 Starting the app:
 
