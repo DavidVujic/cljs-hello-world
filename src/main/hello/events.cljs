@@ -16,5 +16,5 @@
 
 (rf/reg-event-fx
  :toggle-theme
- (fn [_ [_ checked?]]
-   {:dispatch [:theme (if checked? "dark" "light")]}))
+ (fn [_ [_ on?]]
+   {:dispatch [:theme (if on? "light" "dark")]}))
