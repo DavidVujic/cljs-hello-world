@@ -2,16 +2,18 @@
   (:require [reagent.dom :as rdom]))
 
 (defn theme-toggle-field []
-  [:input.theme-switch {:type "checkbox"
-                        :id   "theme-switch"}])
+  [:input {:type       "checkbox"
+           :class-name "theme-switch"
+           :id         "theme-toggle"}])
 
 (defn theme-toggle-label []
-  [:label.switch-label {:for "theme-switch"}])
+  [:label {:class-name "switch-label"
+           :for        "theme-toggle"}])
 
 (defn page []
   [:<>
    [theme-toggle-field]
-   [:div#page
+   [:div {:id "page"}
     [theme-toggle-label]]])
 
 (defn main-element []
