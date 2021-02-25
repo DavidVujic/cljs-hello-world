@@ -1,23 +1,21 @@
 ### ClojureScript: React with a Hiccup
 
-Example code using:
-* ClojureScript
-* Shadow-cljs
-* Reagent
-* re-frame
-* a third party React library (`react-tooltip`)
-* a third party JavaScript library (`date-fns`)
+#### Func Prog Sweden second meetup 2021
 
-Here is a clickable example [web page](https://davidvujic.github.io/cljs-hello-world/public/) based on the source code of this repo.
+Here's [the recording from the session](https://www.youtube.com/watch?v=SVouy-Zd-_g)
 
-##### References
-Have a look at this [Blog post](https://davidvujic.blogspot.com/2021/01/simple-within-parentheses.html) 
-for an introduction to `Clojure`, `ClojureScript`, `Reagent` and `re-frame`.
-
-[Slides](https://docs.google.com/presentation/d/1N91pDGYlXjGx6hXoG0NAlSUz-sWnN15YLKqWXwSWidE/edit?usp=sharing)
+And the [Slides](https://docs.google.com/presentation/d/1N91pDGYlXjGx6hXoG0NAlSUz-sWnN15YLKqWXwSWidE/edit?usp=sharing)
 used in the 2021-02-24 [FuncProg Sweden Second MeetUp 2021](https://www.meetup.com/Func-Prog-Sweden/events/275884481/)
 
-##### Development
+
+#### Blog posts
+The [12 Stages of Learning Clojure](https://davidvujic.blogspot.com/2020/12/the-12-stages-of-learning-clojure.html) blog post, mentioned in the talk.
+
+Also, have a look at this [Blog post](https://davidvujic.blogspot.com/2021/01/simple-within-parentheses.html)
+for an introduction to `Clojure`, `ClojureScript`, `Reagent` and `re-frame`.
+
+
+##### The example code
 Starting the app:
 
 ``` bash
